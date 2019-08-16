@@ -4,27 +4,30 @@
 call plug#begin('~/.vim/plugged')
 
 let g:plug_url_format = 'https://github.com/%s.git'
-Plug 'morhetz/gruvbox'
 
-"XAJA|Plug 'fenetikm/falcon'
-"XAJA|
-"XAJA|Plug 'ayu-theme/ayu-vim'
-"XAJA|
-"XAJA|Plug 'lifepillar/pgsql.vim'
-"XAJA|Plug 'vim-scripts/dbext.vim'
-"XAJA|Plug 'HerringtonDarkholme/yats.vim'
-"XAJA|
-"XAJA|Plug 'scrooloose/nerdtree'
-"XAJA|Plug 'Xuyuanp/nerdtree-git-plugin'
-"XAJA|
-"XAJA|Plug 'tpope/vim-fugitive'
-"XAJA|Plug 'airblade/vim-gitgutter'
-"XAJA|
-"XAJA|" Working with quickfix list
-"XAJA|Plug 'tpope/vim-unimpaired'
-"XAJA|
-"XAJA|" grepping
-"XAJA|Plug 'mhinz/vim-grepper', {'on': ['Grepper', '<plug>(GrepperOperator)'] }
+"" Colorschemes
+Plug '~/.vim-plugins/morhetz/gruvbox'
+
+"" Postgres
+Plug '~/.vim-plugins/lifepillar/pgsql.vim'
+Plug '~/.vim-plugins/vim-scripts/dbext.vim'
+
+"" Navigation
+Plug '~/.vim-plugins/scrooloose/nerdtree'
+
+"" Git-related
+Plug '~/.vim-plugins/Xuyuanp/nerdtree-git-plugin'
+Plug '~/.vim-plugins/tpope/vim-fugitive'
+Plug '~/.vim-plugins/airblade/vim-gitgutter'
+
+" Working with quickfix list
+Plug '~/.vim-plugins/tpope/vim-unimpaired'
+
+"" Type Script
+Plug '~/.vim-plugins/HerringtonDarkholme/yats.vim'
+
+" Searching
+Plug '~/.vim-plugins/mhinz/vim-grepper', {'on': ['Grepper', '<plug>(GrepperOperator)'] }
 
 " Initialize plugin system
 call plug#end()

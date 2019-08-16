@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ -z $1 ]
+then
+    echo "No module given!"
+    exit 1
+fi
+git submodule deinit vim-plugins/$1
+git rm -r vim-plugins/$1
+git commit -m "removed plugin: $1" .gitmodules vim-plugins/$1

@@ -25,3 +25,9 @@
 [submodule "vim-plugins/HerringtonDarkholme/yats.vim"]
 	path = vim-plugins/HerringtonDarkholme/yats.vim
 	url = https://github.com/HerringtonDarkholme/yats.vim
+[submodule "vim-plugins/tpope/vim-unimpaired"]
+	path = vim-plugins/tpope/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired
+[submodule "vim-plugins/mhinz/vim-grepper"]
+	path = vim-plugins/mhinz/vim-grepper
+	url = https://github.com/mhinz/vim-grepper

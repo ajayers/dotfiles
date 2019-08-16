@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ -z $1 ]
+then
+    echo "No module given!"
+    exit 1
+fi
+git submodule add -f https://github.com/$1 vim-plugins/$1
