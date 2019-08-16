@@ -1,3 +1,25 @@
-- clean: []
-- link: {}
-- shell: []
+# vim: set expandtab:sts=4:ts=4:sw=4
+
+- clean:
+    link:
+        relink: true
+
+- clean: ['~']
+- link:
+    ~/.dotfiles: ''
+    ~/.bash_profile: 
+        force: true
+    ~/.bash_logout: 
+        force: true
+    ~/.bashrc: 
+        force: true
+    ~/bin:
+    #~/.tmux.conf: tmux.conf
+    ~/.vimrc:
+    ~/.vim: vim
+
+- shell: 
+  - [git submodule update --init --recursive, Installing submodules]
+    #  - [vim +PlugInstall +qall, Installing vim plugins]
+
+   
