@@ -16,7 +16,9 @@
     ~/bin:
     #~/.tmux.conf: tmux.conf
     ~/.vimrc:
+        force: true
     ~/.vim:
+        force: true
     ~/.vim-plugins:
 
 - shell: 
