@@ -29,6 +29,8 @@ Plug '~/.vim-plugins/HerringtonDarkholme/yats.vim'
 " Searching
 Plug '~/.vim-plugins/mhinz/vim-grepper', {'on': ['Grepper', '<plug>(GrepperOperator)'] }
 
+Plug '~/.vim-plugins/vim-airline/vim-airline'
+
 " Initialize plugin system
 call plug#end()
 
