@@ -119,6 +119,11 @@ fi
 
 # BEGIN AJA
 
+# include a local bashrc
+if [ -f ~/.bashrc_local ]; then
+    . ~/.bashrc_local
+fi
+
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
