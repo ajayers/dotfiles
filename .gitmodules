@@ -4,6 +4,3 @@
 #[submodule "vim/plugged/gruvbox"]
 #	path = vim/plugged/gruvbox
 #	url = https://github.com/morhetz/gruvbox
-[submodule "vim/plugged/gruvbox"]
-	path = vim/plugged/gruvbox
-	url = https://github.com/morhetz/gruvbox
