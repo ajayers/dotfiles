@@ -31,3 +31,6 @@
 [submodule "vim-plugins/mhinz/vim-grepper"]
 	path = vim-plugins/mhinz/vim-grepper
 	url = https://github.com/mhinz/vim-grepper
+[submodule "vim-plugins/bling/vim-airline"]
+	path = vim-plugins/bling/vim-airline
+	url = https://github.com/bling/vim-airline
