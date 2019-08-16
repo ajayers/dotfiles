@@ -1,6 +1,9 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+#[submodule "vim/plugged/gruvbox"]
+#	path = vim/plugged/gruvbox
+#	url = https://github.com/morhetz/gruvbox
 [submodule "vim/plugged/gruvbox"]
 	path = vim/plugged/gruvbox
 	url = https://github.com/morhetz/gruvbox
