@@ -1,3 +1,27 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+[submodule "vim-plugins/morhetz/gruvbox"]
+	path = vim-plugins/morhetz/gruvbox
+	url = https://github.com/morhetz/gruvbox
+[submodule "vim-plugins/lifepillar/pgsql.vim"]
+	path = vim-plugins/lifepillar/pgsql.vim
+	url = https://github.com/lifepillar/pgsql.vim
+[submodule "vim-plugins/vim-scripts/dbext.vim"]
+	path = vim-plugins/vim-scripts/dbext.vim
+	url = https://github.com/vim-scripts/dbext.vim
+[submodule "vim-plugins/scrooloose/nerdtree"]
+	path = vim-plugins/scrooloose/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "vim-plugins/Xuyuanp/nerdtree-git-plugin"]
+	path = vim-plugins/Xuyuanp/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin
+[submodule "vim-plugins/tpope/vim-fugitive"]
+	path = vim-plugins/tpope/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim-plugins/airblade/vim-gitgutter"]
+	path = vim-plugins/airblade/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "vim-plugins/HerringtonDarkholme/yats.vim"]
+	path = vim-plugins/HerringtonDarkholme/yats.vim
+	url = https://github.com/HerringtonDarkholme/yats.vim
