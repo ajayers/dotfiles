@@ -34,3 +34,15 @@
 [submodule "vim-plugins/vim-airline/vim-airline"]
 	path = vim-plugins/vim-airline/vim-airline
 	url = https://github.com/vim-airline/vim-airline
+[submodule "vim-plugins/Quramy/tsuquyomi"]
+	path = vim-plugins/Quramy/tsuquyomi
+	url = https://github.com/Quramy/tsuquyomi
+[submodule "vim-plugins/ervandew/supertab"]
+	path = vim-plugins/ervandew/supertab
+	url = https://github.com/ervandew/supertab
+[submodule "vim-plugins/vim-syntastic/syntastic"]
+	path = vim-plugins/vim-syntastic/syntastic
+	url = https://github.com/vim-syntastic/syntastic
+[submodule "vim-plugins/neomake/neomake"]
+	path = vim-plugins/neomake/neomake
+	url = https://github.com/neomake/neomake

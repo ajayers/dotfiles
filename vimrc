@@ -25,17 +25,25 @@ Plug '~/.vim-plugins/tpope/vim-unimpaired'
 
 "" Type Script
 Plug '~/.vim-plugins/HerringtonDarkholme/yats.vim'
+Plug '~/.vim-plugins/Quramy/tsuquyomi'
+"Plug '~/.vim-plugins/vim-syntastic/syntastic'
+Plug '~/.vim-plugins/neomake/neomake'
 
 " Searching
 Plug '~/.vim-plugins/mhinz/vim-grepper', {'on': ['Grepper', '<plug>(GrepperOperator)'] }
 
+" vim gui
 Plug '~/.vim-plugins/vim-airline/vim-airline'
+
+" other
+Plug '~/.vim-plugins/ervandew/supertab'
 
 " Initialize plugin system
 call plug#end()
 
 """ ----------------------------------------------------------------------------------------------------------
 """ Plug 'scrooloose/nerdtree'
+"""
 
 "XAJA|" open when no command line arguments
 "XAJA|autocmd StdinReadPre * let s:std_in=1
@@ -53,12 +61,36 @@ let NERDTreeWinSize = 50
 
 """ ----------------------------------------------------------------------------------------------------------
 """ Plug 'vim-scripts/dbext.vim'
+"""
 let g:dbext_default_profile_PG = 'type=PGSQL:host=bogi-sta-dock01.evs.anl.gov:port=5432:dbname=bogi_production:user=bogi'
 "let g:dbext_default_PGSQL_bin = 'pgcli'
 let g:dbext_default_profile = 'PG'
 
+
 """ ----------------------------------------------------------------------------------------------------------
-""" Plug 'scrooloose/nerdtree'
+""" Plug 'neomake/neomake'
+"""
+call neomake#configure#automake('w')
+let g:neomake_open_list = 2
+
+
+""" ----------------------------------------------------------------------------------------------------------
+""" Plug 'mhinz/grepper'
+"""
+nmap gs <plug>(GrepperOperator)
+xmap gs <plug>(GrepperOperator)
+
+nnoremap <leader>G :Grepper -tool git<cr>
+nnoremap <leader>g :Grepper -tool ag<cr>
+
+""" ----------------------------------------------------------------------------------------------------------
+""" Other
+"""
+
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabContextDefaultCompletionType = '<c-n>'
+"let g:tsuquyomi_disable_quickfix = 1
+"let g:syntastic_typescript_checkers = ['tsuquyomi']
 
 set nocompatible
 set syntax=on
