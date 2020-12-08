@@ -22,9 +22,6 @@
 [submodule "vim-plugins/airblade/vim-gitgutter"]
 	path = vim-plugins/airblade/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
-[submodule "vim-plugins/HerringtonDarkholme/yats.vim"]
-	path = vim-plugins/HerringtonDarkholme/yats.vim
-	url = https://github.com/HerringtonDarkholme/yats.vim
 [submodule "vim-plugins/tpope/vim-unimpaired"]
 	path = vim-plugins/tpope/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired
@@ -34,9 +31,6 @@
 [submodule "vim-plugins/vim-airline/vim-airline"]
 	path = vim-plugins/vim-airline/vim-airline
 	url = https://github.com/vim-airline/vim-airline
-[submodule "vim-plugins/Quramy/tsuquyomi"]
-	path = vim-plugins/Quramy/tsuquyomi
-	url = https://github.com/Quramy/tsuquyomi
 [submodule "vim-plugins/ervandew/supertab"]
 	path = vim-plugins/ervandew/supertab
 	url = https://github.com/ervandew/supertab
@@ -46,3 +40,42 @@
 [submodule "vim-plugins/neomake/neomake"]
 	path = vim-plugins/neomake/neomake
 	url = https://github.com/neomake/neomake
+[submodule "vim-plugins/elixir-editors/vim-elixir"]
+	path = vim-plugins/elixir-editors/vim-elixir
+	url = https://github.com/elixir-editors/vim-elixir.git
+[submodule "vim-plugins/elixir-lsp/coc-elixir"]
+	path = vim-plugins/elixir-lsp/coc-elixir
+	url = https://github.com/elixir-lsp/coc-elixir.git
+[submodule "vim-plugins/neoclide/coc.nvim"]
+	path = vim-plugins/neoclide/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
+[submodule "vim-plugins/elixir-lsp/elixir-ls"]
+	path = vim-plugins/elixir-lsp/elixir-ls
+	url = https://github.com/elixir-lsp/elixir-ls
+[submodule "vim-plugins/tpope/vim-endwise"]
+	path = vim-plugins/tpope/vim-endwise
+	url = https://github.com/tpope/vim-endwise.git
+[submodule "vim-plugins/dracula/vim"]
+	path = vim-plugins/dracula/vim
+	url = https://github.com/dracula/vim.git
+[submodule "vim-plugins/kyoz/purify"]
+	path = vim-plugins/kyoz/purify
+	url = https://github.com/kyoz/purify.git
+[submodule "vim-plugins/sonph/onehalf"]
+	path = vim-plugins/sonph/onehalf
+	url = https://github.com/sonph/onehalf.git
+[submodule "vim-plugins/tomasr/molokai"]
+	path = vim-plugins/tomasr/molokai
+	url = https://github.com/tomasr/molokai.git
+[submodule "vim-plugins/pangloss/vim-javascript"]
+	path = vim-plugins/pangloss/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "vim-plugins/leafgarland/typescript-vim"]
+	path = vim-plugins/leafgarland/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "vim-plugins/maxmellon/vim-jsx-pretty"]
+	path = vim-plugins/maxmellon/vim-jsx-pretty
+	url = https://github.com/MaxMEllon/vim-jsx-pretty.git
+[submodule "vim-plugins/shapeoflambda/dark-purple.vim"]
+	path = vim-plugins/shapeoflambda/dark-purple.vim
+	url = https://github.com/shapeoflambda/dark-purple.vim.git
