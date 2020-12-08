@@ -34,9 +34,6 @@
 [submodule "vim-plugins/ervandew/supertab"]
 	path = vim-plugins/ervandew/supertab
 	url = https://github.com/ervandew/supertab
-[submodule "vim-plugins/vim-syntastic/syntastic"]
-	path = vim-plugins/vim-syntastic/syntastic
-	url = https://github.com/vim-syntastic/syntastic
 [submodule "vim-plugins/neomake/neomake"]
 	path = vim-plugins/neomake/neomake
 	url = https://github.com/neomake/neomake
