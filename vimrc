@@ -27,7 +27,6 @@ Plug '~/.vim-plugins/airblade/vim-gitgutter'
 Plug '~/.vim-plugins/tpope/vim-unimpaired'
 
 "XAJA|"" Type Script
-"XAJA|Plug '~/.vim-plugins/HerringtonDarkholme/yats.vim'
 "XAJA|Plug '~/.vim-plugins/Quramy/tsuquyomi'
 "XAJA|"Plug '~/.vim-plugins/vim-syntastic/syntastic'
 "XAJA|Plug '~/.vim-plugins/neomake/neomake'
