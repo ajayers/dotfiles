@@ -164,3 +164,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # asdf
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
+
+export COLORTERM=truecolor
+export TERM=xterm-256color
