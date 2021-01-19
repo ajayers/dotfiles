@@ -14,6 +14,9 @@ Plug '~/.vim-plugins/tomasr/molokai'
 "" Postgres
 Plug '~/.vim-plugins/lifepillar/pgsql.vim'
 Plug '~/.vim-plugins/vim-scripts/dbext.vim'
+Plug '~/.vim-plugins/darold/pgFormatter.git'
+Plug '~/.vim-plugins/sbdchd/neoformat.git'
+
 
 "" Navigation
 Plug '~/.vim-plugins/scrooloose/nerdtree'
@@ -26,10 +29,7 @@ Plug '~/.vim-plugins/airblade/vim-gitgutter'
 " Working with quickfix list
 Plug '~/.vim-plugins/tpope/vim-unimpaired'
 
-"XAJA|"" Type Script
-"XAJA|Plug '~/.vim-plugins/Quramy/tsuquyomi'
-"XAJA|"Plug '~/.vim-plugins/vim-syntastic/syntastic'
-"XAJA|Plug '~/.vim-plugins/neomake/neomake'
+" Type Script
 Plug '~/.vim-plugins/pangloss/vim-javascript'    " JavaScript support
 Plug '~/.vim-plugins/leafgarland/typescript-vim' " TypeScript syntax
 Plug '~/.vim-plugins/maxmellon/vim-jsx-pretty'   " JS and JSX syntax
@@ -89,13 +89,15 @@ let g:dbext_default_profile_PG = 'type=PGSQL:host=bogi-sta-dock01.evs.anl.gov:po
 "let g:dbext_default_PGSQL_bin = 'pgcli'
 let g:dbext_default_profile = 'PG'
 
+""" ----------------------------------------------------------------------------------------------------------
+""" Plug 'darold/pgFormatter'
+"""
+au FileType sql setl formatprg=/usr/bin/pg_format\ --spaces\ 2\ \--nogrouping\ \--keyword-case\ 2\ --no-extra-line\ --type-case\ 2\ --wrap-comment\ --wrap-limit\ 110\ -
 
 """ ----------------------------------------------------------------------------------------------------------
-""" Plug 'neomake/neomake'
+""" Plug 'sbdchd/neoformat.git'
 """
-"XAJA|call neomake#configure#automake('w')
-"XAJA|let g:neomake_open_list = 2
-
+let g:neoformat_try_formatprg = 1
 
 """ ----------------------------------------------------------------------------------------------------------
 """ Plug 'mhinz/grepper'
@@ -109,9 +111,6 @@ nnoremap <leader>g :Grepper -tool ag<cr>
 """ ----------------------------------------------------------------------------------------------------------
 """ Other
 """
-
-"XAJA|"let g:tsuquyomi_disable_quickfix = 1
-"XAJA|"let g:syntastic_typescript_checkers = ['tsuquyomi']
 
 set nocompatible
 set syntax=on
@@ -132,10 +131,12 @@ colorscheme dracula
 "colorscheme onehalfdark
 "colorscheme molokai
 
+autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
+
 command! FormatJSON %!python -m json.tool
 
 " defaults
-set ts=4 sts=4 sw=4 expandtab
+set ts=2 sts=2 sw=2 expandtab
 set colorcolumn=110
 
 " CoC

@@ -73,3 +73,9 @@
 [submodule "vim-plugins/shapeoflambda/dark-purple.vim"]
 	path = vim-plugins/shapeoflambda/dark-purple.vim
 	url = https://github.com/shapeoflambda/dark-purple.vim.git
+[submodule "vim-plugins/darold/pgFormatter.git"]
+	path = vim-plugins/darold/pgFormatter.git
+	url = https://github.com/darold/pgFormatter.git
+[submodule "vim-plugins/sbdchd/neoformat.git"]
+	path = vim-plugins/sbdchd/neoformat.git
+	url = https://github.com/sbdchd/neoformat.git
