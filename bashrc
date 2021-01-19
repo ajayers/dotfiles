@@ -161,5 +161,6 @@ unset __conda_setup
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
-# ondir
-source /usr/share/ondir/integration/bash
+# asdf
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
