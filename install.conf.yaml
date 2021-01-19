@@ -20,6 +20,8 @@
     ~/.vim:
         force: true
     ~/.vim-plugins:
+    ~/.byobu:
+        force: true
 
 - shell: 
   - [git submodule update --init --recursive, Installing submodules]
