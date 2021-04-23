@@ -79,3 +79,6 @@
 [submodule "vim-plugins/sbdchd/neoformat.git"]
 	path = vim-plugins/sbdchd/neoformat.git
 	url = https://github.com/sbdchd/neoformat.git
+[submodule "vim-plugins/prettier/vim-prettier.git"]
+	path = vim-plugins/prettier/vim-prettier.git
+	url = https://github.com/prettier/vim-prettier.git

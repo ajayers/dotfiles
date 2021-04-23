@@ -158,8 +158,8 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+#XX# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+#XXexport PATH="$PATH:$HOME/.rvm/bin"
 
 # asdf
 . $HOME/.asdf/asdf.sh
@@ -167,3 +167,4 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 export COLORTERM=truecolor
 export TERM=xterm-256color
+export BYOBU_TERM=tmux-256color

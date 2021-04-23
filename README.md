@@ -56,3 +56,19 @@ Dotbot (or this repository) to help other people discover Dotbot.
 [wazery_dotfiles]: https://github.com/wazery/dotfiles
 [thirtythreeforty_dotfiles]: https://github.com/thirtythreeforty/dotfiles
 [dotbot-users]: https://github.com/anishathalye/dotbot/wiki/Users
+
+
+AJA Notes
+=========
+
+asdf
+----
+
+https://asdf-vm.com/#/core-manage-asdf
+
+```bash
+$ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
+```
+
+
+

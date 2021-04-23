@@ -52,6 +52,7 @@ Plug '~/.vim-plugins/elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepac
 " other
 Plug '~/.vim-plugins/ervandew/supertab'
 Plug '~/.vim-plugins/tpope/vim-endwise'
+Plug '~/.vim-plugins/prettier/vim-prettier.git'
 
 " Initialize plugin system
 call plug#end()
@@ -125,6 +126,7 @@ set hlsearch
 "let ayucolor="mirage" " for mirage version of theme
 "let ayucolor="dark"   " for dark version of theme
 set termguicolors
+set term=xterm-256color
 colorscheme dracula
 "colorscheme purify
 "let g:plurify_inverse = 0
@@ -132,6 +134,7 @@ colorscheme dracula
 "colorscheme molokai
 
 autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
+autocmd FileType typescriptreact setlocal formatprg=prettier\ --parser\ typescript
 
 command! FormatJSON %!python -m json.tool
 
