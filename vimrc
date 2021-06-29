@@ -15,7 +15,8 @@ Plug '~/.vim-plugins/tomasr/molokai'
 Plug '~/.vim-plugins/lifepillar/pgsql.vim'
 Plug '~/.vim-plugins/vim-scripts/dbext.vim'
 Plug '~/.vim-plugins/darold/pgFormatter.git'
-Plug '~/.vim-plugins/sbdchd/neoformat.git'
+" FIXME AJA| remove following plug
+" Plug '~/.vim-plugins/sbdchd/neoformat.git'
 
 
 "" Navigation
@@ -31,14 +32,20 @@ Plug '~/.vim-plugins/tpope/vim-unimpaired'
 
 " Type Script
 Plug '~/.vim-plugins/pangloss/vim-javascript'    " JavaScript support
-Plug '~/.vim-plugins/leafgarland/typescript-vim' " TypeScript syntax
-Plug '~/.vim-plugins/maxmellon/vim-jsx-pretty'   " JS and JSX syntax
+" FIXME AJA| remove following plug
+"Plug '~/.vim-plugins/leafgarland/typescript-vim' " TypeScript syntax
+" FIXME AJA| remove following plug
+"Plug '~/.vim-plugins/maxmellon/vim-jsx-pretty'   " JS and JSX syntax
 
 " Searching
 Plug '~/.vim-plugins/mhinz/vim-grepper', {'on': ['Grepper', '<plug>(GrepperOperator)'] }
 
 " vim gui
 Plug '~/.vim-plugins/vim-airline/vim-airline'
+
+" fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " Elixir
 " vim-elixir
@@ -52,7 +59,8 @@ Plug '~/.vim-plugins/elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepac
 " other
 Plug '~/.vim-plugins/ervandew/supertab'
 Plug '~/.vim-plugins/tpope/vim-endwise'
-Plug '~/.vim-plugins/prettier/vim-prettier.git'
+Plug '~/.vim-plugins/prettier/vim-prettier.git', { 'do': 'yarn install', 'for': ['javascript', 'javascriptreat', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+
 
 " Initialize plugin system
 call plug#end()
@@ -78,7 +86,7 @@ let NERDTreeWinSize = 50
 
 
 """ ----------------------------------------------------------------------------------------------------------
-""" Plug 'ervandew/supertag'
+""" Plug 'ervandew/supertab'
 """
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = '<c-n>'
@@ -94,11 +102,6 @@ let g:dbext_default_profile = 'PG'
 """ Plug 'darold/pgFormatter'
 """
 au FileType sql setl formatprg=/usr/bin/pg_format\ --spaces\ 2\ \--nogrouping\ \--keyword-case\ 2\ --no-extra-line\ --type-case\ 2\ --wrap-comment\ --wrap-limit\ 110\ -
-
-""" ----------------------------------------------------------------------------------------------------------
-""" Plug 'sbdchd/neoformat.git'
-"""
-let g:neoformat_try_formatprg = 1
 
 """ ----------------------------------------------------------------------------------------------------------
 """ Plug 'mhinz/grepper'
@@ -133,8 +136,8 @@ colorscheme dracula
 "colorscheme onehalfdark
 "colorscheme molokai
 
-autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
-autocmd FileType typescriptreact setlocal formatprg=prettier\ --parser\ typescript
+"autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
+"autocmd FileType typescriptreact setlocal formatprg=prettier\ --parser\ typescript
 
 command! FormatJSON %!python -m json.tool
 
@@ -284,3 +287,4 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
+set backupcopy=no
