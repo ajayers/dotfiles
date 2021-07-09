@@ -32,10 +32,8 @@ Plug '~/.vim-plugins/tpope/vim-unimpaired'
 
 " Type Script
 Plug '~/.vim-plugins/pangloss/vim-javascript'    " JavaScript support
-" FIXME AJA| remove following plug
-"Plug '~/.vim-plugins/leafgarland/typescript-vim' " TypeScript syntax
-" FIXME AJA| remove following plug
-"Plug '~/.vim-plugins/maxmellon/vim-jsx-pretty'   " JS and JSX syntax
+Plug '~/.vim-plugins/leafgarland/typescript-vim' " TypeScript syntax
+Plug '~/.vim-plugins/maxmellon/vim-jsx-pretty'   " JS and JSX syntax
 
 " Searching
 Plug '~/.vim-plugins/mhinz/vim-grepper', {'on': ['Grepper', '<plug>(GrepperOperator)'] }
